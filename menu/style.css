@@ -1,0 +1,324 @@
+body{
+    padding: 0;
+    margin: 50;
+    margin-left: 10px;
+    padding-left: 50px;
+
+}
+header{
+    font-size: 50px;
+    margin-right: 50px;
+    width: 200px;
+
+
+    /* color: rgb(27, 250, 31); */
+}
+.container{
+    padding: 20px;
+    /* background-color: red; */
+}
+.container2{
+    display: flex;
+
+}
+    
+
+nav {
+    /* background-color: #333; */
+    padding: 10px;
+}
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center the items */
+}
+li {
+    margin: 0 15px;
+}
+a {
+    text-decoration: none;
+    color: rgb(21, 20, 20);
+    font-size: 28px;
+    padding: 10px 15px;
+    margin-left: 40px;
+    /* background-color: #e7e5e5; */
+
+}
+a:hover {
+    background-color: #e7e5e5;
+    border-radius: 5px;
+    color: #000;
+}
+
+/* .dropdown{
+    /* position: absolute; 
+    top: 100%;
+    left: 0;
+    /* background-color: #444; 
+    display: none;
+    /* min-width: 150px; 
+    border-radius: 5px;
+    width: 50px;
+    padding: 0px;
+    height: 100px;
+}
+.dropdown a{
+    margin-top: 5px;
+}
+/* .menu-item:hover .dropdown,
+.menu-item .special:hover + .dropdown {
+    display: block;
+    font-size: 15px;
+} 
+
+.special:hover + .dropdown {
+
+    display: block;
+
+}
+.special:hover + .dropdown a{
+    font-size: 15px;
+    border-radius: 5px;
+    
+    
+
+} */
+
+
+
+/* Adjust the size of the dropdown */
+.dropdown {
+    color: #000;
+    display: none;
+    position: absolute;
+    top: 100%;
+    margin-left: 22px;
+    /* background-color: #444; */
+    width: 200px; /* Increased width */
+    padding: 10px 0; /* Adjust padding for more space */
+    border-radius: 5px;
+    min-height: 150px; /* Increased height for better visibility */
+    z-index: 100; /* Ensure it's on top of other content */
+}
+
+/* When hovering on the "Menu" link (or "special") */
+.dropdown:hover,
+.special:hover + .dropdown{
+    display: block; /* Show the dropdown when hovering over "Menu" or the <li> */
+}
+
+/* Optional: Style the links in the dropdown */
+.dropdown a {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #131313;
+    text-decoration: none;
+    display: block; /* Stack the items vertically */
+}
+
+.dropdown a:hover {
+    background-color: #666;
+    border-radius: 5px;
+}
+
+/* Style the menu items */
+.menu-item {
+    position: relative; /* Ensure dropdown appears correctly */
+}
+.menu-item .active{
+    background-color: beige;
+}
+
+
+
+main{
+    background-color: #fff;
+    margin-top: 140px;
+    font-size: 40px;
+    /* width: 390px; */
+    display: flex;
+}
+main span{
+    /* background-color: #7b7272; */
+    font-size: 25px;
+    color: #f20bb4;
+   
+}
+main .paragraph{
+    width: 390px;
+}
+/* main .image{
+    margin-left: 350px;
+    height: 400px;
+    width: 500px;
+} */
+main .image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Two images per row */
+    gap: 30px; /* Spacing between images */
+    justify-content: center; /* Centering the grid */
+    /* background-color: #f20bb4; */
+    padding: 20px; 
+}
+
+main .image {
+    
+    height: 200px;
+    width: 300px;
+    max-width: 100%; /* Makes it responsive */
+    border-radius: 10px; /* Smooth rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+}
+
+main .image:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Add a shadow */
+}
+/* 
+@media (max-width: 768px) {
+    main .image-container {
+        grid-template-columns: repeat(1, 1fr); /* Single column on smaller screens 
+    }
+} */
+.image-container .pcart{
+    /* background-color: #bc3a3a; */
+    display: flex;
+    padding: 0px;
+    top: 0;
+}
+.image-container p{
+    /* color: red; */
+    font-size: 20px;
+    /* background-color: #000; */
+    width: 150px;
+    padding: 0px;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 10px;
+
+    
+}
+.image-container .add-to-cart{
+    background-color: #fff;
+    font-size: 15px;
+    width: 90px;
+    height: 40px;
+    margin-left: 30px;
+    padding: 0px;
+    align-items: center;
+    /* margin-top: 10px; */
+    transition: transform 0.3s ease; /* Smooth animation */
+    border-radius: 10px;
+
+
+
+
+}
+.add-to-cart:hover{
+    background-color: #bdb7b7;
+    transform: scale(1.02); /* Slight zoom on hover */
+
+}
+
+
+article{
+    /* background-color: blue; */
+    margin-top: 50px;
+    padding: 10px;
+
+    
+}
+.button1 , .button2{
+    /* background-color: yellow; */
+    margin-right: 30px;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: 600;
+    /* border-bottom: #31f20b; */
+    
+
+}
+section{
+    background-color: #fff;
+    margin-top: 10px;
+}
+/* General styles */
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  .navbar {
+    background-color: #444;
+    padding: 10px;
+  }
+  
+  .menu-item {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu-item li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .menu-item a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .main {
+    padding: 20px;
+  }
+  
+  .item {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .pcart {
+    margin-top: 10px;
+  }
+  
+  .add-to-cart {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #218838;
+  }
+   */
+  /* Cart page styles */
+  

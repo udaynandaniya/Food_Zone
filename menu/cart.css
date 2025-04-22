@@ -1,0 +1,53 @@
+main{
+    
+   font-size: 20px;
+   display: block; 
+    
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  .cart-summary {
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 350px;
+  }
+  
+  #order-button {
+    background-color: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    font-size:20px ;
+    border-radius: 12px;
+  }
+  
+  #order-button:hover {
+    background-color: #218838;
+  }
+  
+  /* Smooth transitions */
+  button, input[type="number"] {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+  }
+  

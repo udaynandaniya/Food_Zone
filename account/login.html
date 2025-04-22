@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="whole" >
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="signup.html" id="signupLink">Signup</a>
+        <a href="logout.html" id="logoutLink" class="hidden">Logout</a>
+    </div>
+    
+    <div class="container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+            <input type="text" id="address" placeholder="Address" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <select id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <button type="submit">Login</button>
+        </form>
+        <p>Already have an account? <a href="signup.html">Sign Up</a></p>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

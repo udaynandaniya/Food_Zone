@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="cart.css" />
+
+  </head>
+  <body>
+  
+      <div class="container">
+        <div class="container2">
+      <header>Cart</header>
+
+      <div class="navbar">
+        <nav>
+          <ul class="menu-item">
+
+            <li><a href="../base/index.html">Home</a></li>
+            <li><a class="special" >Menu</a>
+ 
+              <ul class="dropdown">
+                <li><a href="../menu/pizza.html">Pizza</a></li>
+                <li><a href="../menu/burger.html" class="active">Burger</a></li>
+                <li><a href="../menu/dabeli.html">Dabeli</a></li>
+                <li><a href="../menu/cocacola.html">Cocacola</a></li>
+               
+              </ul>
+           
+            
+              </li>
+              <!-- <li><a href="service.html">Our Deal</a></li> -->
+              <!-- <li><a href="blog.html">Categories</a></li> -->
+              <li><a href="../menu/cart.html" class="active">Cart</a></li>
+              <!-- <li><a href="login.html">login</a></li>
+              <li><a href="logout.html">logout</a></li>
+   -->
+            </ul>
+        </nav>
+    </div>
+      </div>
+      <main>
+        <table>
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Total</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="cart-items">
+            <!-- Cart items will be dynamically inserted here -->
+          </tbody>
+        </table>
+        <div class="cart-summary">
+          <p>Total Price: $<span id="total-price">0</span></p>
+          <button id="order-button" onclick="placenow()">Place Order</button>
+        </div>
+      </main>
+    </div>
+
+    <script src="cart.js"></script>
+  </body>
+</html>

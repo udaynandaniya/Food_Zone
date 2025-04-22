@@ -1,0 +1,44 @@
+/* confirm.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.confirm-container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 500px;
+}
+.home .button1{
+    background-color: #21ce49;
+    transition: transform 0.3s ease; /* Smooth animation */
+margin-left: 50%;
+}
+.home .button1:hover{
+    color: #e8e1e1;
+    background-color: #2eae12;
+    transform: scale(1.2); /* Slight zoom on hover */
+
+}
+h2 {
+    color: #28a745;
+}
+
+p {
+    font-size: 18px;
+    color: #333;
+}
+
+span {
+    font-weight: bold;
+    color: #007bff;
+}

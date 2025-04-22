@@ -1,0 +1,221 @@
+body{
+    padding: 0;
+    margin: 50;
+    margin-left: 10px;
+    padding-left: 50px;
+
+}
+header{
+    font-size: 50px;
+    margin-right: 50px;
+    /* background-color: #b72323; */
+    width: 200px;
+
+
+    /* color: rgb(27, 250, 31); */
+}
+.container{
+    padding: 20px;
+    /* background-color: red; */
+}
+.container2{
+    display: flex;
+
+}
+    
+
+nav {
+    /* background-color: #333; */
+    padding: 10px;
+}
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center the items */
+}
+li {
+    margin: 0 15px;
+}
+a {
+    text-decoration: none;
+    color: rgb(21, 20, 20);
+    font-size: 28px;
+    padding: 10px 15px;
+    margin-left: 40px;
+    /* background-color: #e7e5e5; */
+
+}
+a:hover {
+    background-color: #e7e5e5;
+    border-radius: 5px;
+    color: #000;
+}
+
+/* .dropdown{
+    /* position: absolute; 
+    top: 100%;
+    left: 0;
+    /* background-color: #444; 
+    display: none;
+    /* min-width: 150px; 
+    border-radius: 5px;
+    width: 50px;
+    padding: 0px;
+    height: 100px;
+}
+.dropdown a{
+    margin-top: 5px;
+}
+/* .menu-item:hover .dropdown,
+.menu-item .special:hover + .dropdown {
+    display: block;
+    font-size: 15px;
+} 
+
+.special:hover + .dropdown {
+
+    display: block;
+
+}
+.special:hover + .dropdown a{
+    font-size: 15px;
+    border-radius: 5px;
+    
+    
+
+} */
+
+
+
+/* Adjust the size of the dropdown */
+.dropdown {
+    color: #000;
+    display: none;
+    position: absolute;
+    top: 100%;
+    margin-left: 22px;
+    /* background-color: #444; */
+    width: 200px; /* Increased width */
+    padding: 10px 0; /* Adjust padding for more space */
+    border-radius: 5px;
+    min-height: 150px; /* Increased height for better visibility */
+    z-index: 100; /* Ensure it's on top of other content */
+}
+
+/* When hovering on the "Menu" link (or "special") */
+.dropdown:hover,
+.special:hover + .dropdown{
+    display: block; /* Show the dropdown when hovering over "Menu" or the <li> */
+}
+
+/* Optional: Style the links in the dropdown */
+.dropdown a {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #131313;
+    text-decoration: none;
+    display: block; /* Stack the items vertically */
+}
+
+.dropdown a:hover {
+    background-color: #666;
+    border-radius: 5px;
+}
+
+/* Style the menu items */
+.menu-item {
+    position: relative; /* Ensure dropdown appears correctly */
+}
+.menu-item .active{
+    background-color: beige;
+}
+
+
+
+main{
+    background-color: #fff;
+    margin-top: 140px;
+    font-size: 40px;
+    /* width: 390px; */
+    display: flex;
+}
+main span{
+    /* background-color: #7b7272; */
+    font-size: 25px;
+    color: #f20bb4;
+   
+}
+main .paragraph{
+    width: 390px;
+}
+/* main .image{
+    margin-left: 350px;
+    height: 400px;
+    width: 500px;
+} */
+main .image-container {
+    margin-left: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two images per row */
+    gap: 20px; /* Spacing between images */
+    justify-content: center; /* Centering the grid */
+    /* background-color: #f20bb4; */
+    padding: 20px; /* Add padding for better spacing */
+}
+
+main .image {
+    height: 200px;
+    width: 300px;
+    max-width: 100%; /* Makes it responsive */
+    border-radius: 10px; /* Smooth rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+}
+
+main .image:hover {
+    transform: scale(1.2); /* Slight zoom on hover */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Add a shadow */
+}
+/* 
+@media (max-width: 768px) {
+    main .image-container {
+        grid-template-columns: repeat(1, 1fr); /* Single column on smaller screens 
+    }
+} */
+
+
+
+article{
+    /* background-color: blue; */
+    margin-top: 50px;
+    padding: 10px;
+
+    
+}
+.button1 , .button2{
+    background-color: rgb(118, 209, 115);
+    margin-right: 30px;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: 600;
+    /* border-bottom: #31f20b; */
+    /* background-color: #d83a3a; */
+    color: #0f0e0e;
+    transition: transform 0.3s ease; /* Smooth animation */
+
+    
+
+}
+.button1:hover , .button2:hover{
+    color: #e8e1e1;
+    background-color: #2eae12;
+    transform: scale(1.2); /* Slight zoom on hover */
+
+}
+section{
+    background-color: #fff;
+    margin-top: 10px;
+}
+.hidden {
+    display: none !important;
+}

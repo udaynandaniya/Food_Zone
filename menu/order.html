@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <div class="order-container">
+        <h2>Order Details</h2>
+        <div class="user-info">
+            <h3>User Information</h3>
+            <form id="user-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                
+                <label for="address">Address:</label>
+                <input type="text" id="address" required>
+                
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" required>
+            </form>
+        </div>
+        
+        <div class="cart-items">
+            <h3>Cart Items</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="order-items">
+                    <!-- Cart items will be dynamically inserted here -->
+                </tbody>
+            </table>
+            <p>Total Price: $<span id="order-total">0</span></p>
+        </div>
+        
+        <button onclick="confirmOrder()">Confirm Order</button>
+        <button onclick="cart()">Back to Cart</button>
+
+    </div>
+    
+    <script src="order.js"></script>
+
+</body>
+</html>
